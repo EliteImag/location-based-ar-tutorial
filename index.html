@@ -13,15 +13,12 @@
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
-	<h2> Text Text Text </h2>
     <a-scene
         vr-mode-ui="enabled: false"
-        <a-entity geometry="primitive: box" material="color: red" rotation="0 90 0" scale="2.0 2.0 2.0" ></a-entity>
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 12.489820; latitude: 41.892590;" animation-mixer/>
         
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
-    <h2> End Text End </h2>
 </body>
